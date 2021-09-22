@@ -1,0 +1,6 @@
+cluster {
+  bootstrap = "pkc-lq8v7.eu-central-1.aws.confluent.cloud:9092"
+  key = <YOUR_KEY>
+  secret = <YOUR_SECRET>
+}
+
