@@ -30,8 +30,11 @@ inThisBuild(
 lazy val tracer =
   project
     .in(file("."))
-    .enablePlugins(AutomateHeaderPlugin)
+    .enablePlugins(AutomateHeaderPlugin, JavaAgent, JavaAppPackaging)
     .settings(commonSettings)
+  //  .settings(
+  //    javaAgents += "com.example" % "agent" % "1.2.3"
+  //  )
     .settings(
       libraryDependencies ++= Seq(
         library.clients,
